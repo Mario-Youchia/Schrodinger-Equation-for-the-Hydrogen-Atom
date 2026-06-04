@@ -94,48 +94,68 @@ The final results give the hydrogen energy levels, the general hydrogen wave-fun
 
 ### Hydrogen energy levels
 
-```text
-E_n = - [ m / (2ℏ^2) * ( e^2 / (4πϵ0) )^2 ] * 1/n^2
-    = E_1 / n^2
-```
+$$
+E_n =
+-\left[
+\frac{m}{2\hbar^2}
+\left(
+\frac{e^2}{4\pi\epsilon_0}
+\right)^2
+\right]
+\frac{1}{n^2}
+=
+\frac{E_1}{n^2}
+$$
 
 ### Hydrogen wave-function form
 
-```text
-ψ_nlm(r, θ, φ)
-= sqrt[
-    (2 / na)^3
-    * (n - l - 1)! / (2n[(n + l)!]^3)
-  ]
-  * e^(-r/na)
-  * (2r / na)^l
-  * L_(n-l-1)^(2l+1)(2r / na)
-  * Y_l^m(θ, φ)
-```
+$$
+\psi_{nlm}(r,\theta,\phi)
+=
+\sqrt{
+\left(
+\frac{2}{na}
+\right)^3
+\frac{(n-l-1)!}{2n[(n+l)!]^3}
+}
+e^{-r/na}
+\left(
+\frac{2r}{na}
+\right)^l
+L_{n-l-1}^{2l+1}
+\left(
+\frac{2r}{na}
+\right)
+Y_l^m(\theta,\phi)
+$$
 
 ### Quantum-number constraints
 
-```text
-n = 1, 2, 3, ...
+$$
+n = 1, 2, 3, \ldots
+$$
 
-l = 0, 1, 2, ..., n - 1
+$$
+l = 0, 1, 2, \ldots, n - 1
+$$
 
-m = -l, ..., 0, ..., l
-```
+$$
+m = -l, \ldots, 0, \ldots, l
+$$
 
 ### Constants used in these equations
 
 | Symbol | Meaning |
 |---|---|
-| `E_n` | Energy per level |
-| `m` in the energy formula | Equivalent mass at the center of gravity between electron and nucleus |
-| `ℏ` | Reduced Planck's constant |
-| `e` | Electric charge |
-| `ϵ0` | Permittivity of free space |
-| `n` | Principal quantum number |
-| `l` | Azimuthal quantum number |
-| `m` | Magnetic quantum number |
-| `a` | Bohr radius |
+| $E_n$ | Energy per level |
+| $m$ in the energy formula | Equivalent mass at the center of gravity between electron and nucleus |
+| $\hbar$ | Reduced Planck's constant |
+| $e$ | Electric charge |
+| $\epsilon_0$ | Permittivity of free space |
+| $n$ | Principal quantum number |
+| $l$ | Azimuthal quantum number |
+| $m$ | Magnetic quantum number |
+| $a$ | Bohr radius |
 
 ## Contents
 
