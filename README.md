@@ -1,6 +1,6 @@
 # Schrödinger Equation for the Hydrogen Atom
 
-This project documents a Partial Differential Equations and Complex Analysis study of the Schrödinger equation for the hydrogen atom. It focuses on deriving the time-independent hydrogen-atom solution using separation of variables in spherical coordinates, then visualizing selected spherical harmonics, hydrogen wave-function outputs, orbital surfaces, and hydrogen energy levels using MATLAB-supported plots.
+The project involves the study of the Schrödinger equation for the hydrogen atom, using partial differential equations and complex analysis. This project aims at obtaining the time-independent hydrogen-atom solution via separation of variables in spherical coordinates and then visualizing selected spherical harmonics, hydrogen wave-function solutions, orbital surfaces, and hydrogen energy levels through MATLAB-generated plots.
 
 ## Preview
 
@@ -13,8 +13,6 @@ The spherical harmonics grid shows selected normalized angular wave-function sha
 The energy-level plot visualizes the hydrogen spectrum using the inverse-square relationship between the energy level and the principal quantum number.
 
 ## Probability-Density Outputs
-
-The probability-density outputs are kept as individual images instead of using the full report table as a screenshot.
 
 <table>
   <thead>
@@ -57,7 +55,7 @@ The probability-density outputs are kept as individual images instead of using t
 
 ## Orbital Surface Outputs
 
-The simulated surfaces of `|psi|^2` are kept as individual images instead of using the full report table as a screenshot.
+The simulated surfaces of `$$\|psi\|^2$$` are kept as individual images instead of using the full report table as a screenshot.
 
 <table>
   <thead>
