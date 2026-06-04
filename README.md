@@ -55,8 +55,6 @@ The energy-level plot visualizes the hydrogen spectrum using the inverse-square 
 
 ## Orbital Surface Outputs
 
-The simulated surfaces of `$$\|psi\|^2$$` are kept as individual images instead of using the full report table as a screenshot.
-
 <table>
   <thead>
     <tr>
