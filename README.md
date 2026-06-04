@@ -59,7 +59,7 @@ The energy-level plot visualizes the hydrogen spectrum using the inverse-square 
   <thead>
     <tr>
       <th>State <code>(n, l, m)</code></th>
-      <th>Simulated surface of <code>\( |\psi|^2 \)</code></th>
+      <th>Simulated surface of \( |\psi|^2 \)</th>
     </tr>
   </thead>
   <tbody>
