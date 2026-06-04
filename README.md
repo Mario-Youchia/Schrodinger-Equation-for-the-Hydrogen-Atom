@@ -121,13 +121,9 @@ $$m = -l, \ldots, 0, \ldots, l$$
 ## Main Features
 
 * Derivation of the time-independent Schrödinger equation for the hydrogen atom
-* Separation of variables in spherical coordinates
-* Angular solution using associated Legendre functions and spherical harmonics
-* Radial solution leading to quantized hydrogen energy levels
 * MATLAB visualization of selected spherical harmonics
 * MATLAB visualization of hydrogen energy levels
 * Individual probability-density and orbital-surface output images
-* Final academic report documenting the derivation, results, and references
 
 ## Technical Overview
 
