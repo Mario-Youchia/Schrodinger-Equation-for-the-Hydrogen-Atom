@@ -24,13 +24,32 @@ The report includes density-plot outputs for selected hydrogen states. Instead o
 
 ## Orbital Surface Outputs
 
-The simulated surfaces of `|psi|^2` are also kept as individual images instead of using the full report table as a screenshot.
+The simulated surfaces of `|psi|^2` are kept as individual images instead of using the full report table as a screenshot.
 
 | State `(n, l, m)` | Simulated surface of `|psi|^2` |
 |---|---|
-| `(2, 0, 0)` | ![Orbital surface for 2-0-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-2-0-0.png) |
-| `(3, 1, 0)` | ![Orbital surface for 3-1-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-3-1-0.png) |
-| `(4, 3, 0)` | ![Orbital surface for 4-3-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-4-3-0.png) |
+| `(2, 0, 0)` | <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-2-0-0.png" alt="Hydrogen orbital surface for n equals 2, l equals 0, m equals 0" width="420"> |
+| `(3, 1, 0)` | <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-3-1-0.png" alt="Hydrogen orbital surface for n equals 3, l equals 1, m equals 0" width="420"> |
+| `(4, 3, 0)` | <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-4-3-0.png" alt="Hydrogen orbital surface for n equals 4, l equals 3, m equals 0" width="420"> |
+
+## Key Results
+
+> **Hydrogen energy levels**
+>
+> `E_n = -13.6 / n^2 eV`
+>
+> **Hydrogen wave-function form**
+>
+> `psi_nlm(r, theta, phi) = R_nl(r) Y_l^m(theta, phi)`
+>
+> **Quantum-number constraints**
+>
+> `n = 1, 2, 3, ...`
+>
+> `l = 0, 1, ..., n - 1`
+>
+> `m = -l, ..., 0, ..., l`
+
 
 ## Results
 
