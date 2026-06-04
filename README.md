@@ -94,61 +94,33 @@ The final results give the hydrogen energy levels, the general hydrogen wave-fun
 
 ### Hydrogen energy levels
 
-> **Energy per level**
->
-> Eₙ = - [ m / (2ℏ²) × ( e² / 4πϵ₀ )² ] × 1/n²  
-> Eₙ = E₁ / n²
+$$E_n = -\left[\frac{m}{2\hbar^2}\left(\frac{e^2}{4\pi\varepsilon_0}\right)^2\right]\frac{1}{n^2} = \frac{E_1}{n^2}$$
 
 ### Hydrogen wave-function form
 
-> **General hydrogen wave function**
->
-> ψₙₗₘ(r, θ, φ) =
->
-> √[ (2 / na)³ × (n - l - 1)! / 2n[(n + l)!]³ ]  
-> × e^(-r/na)  
-> × (2r / na)ˡ  
-> × Lₙ₋ₗ₋₁²ˡ⁺¹(2r / na)  
-> × Yₗᵐ(θ, φ)
+$$\psi_{nlm}(r,\theta,\phi)=\sqrt{\left(\frac{2}{na}\right)^3\frac{(n-l-1)!}{2n[(n+l)!]^3}}e^{-r/(na)}\left(\frac{2r}{na}\right)^l L_{n-l-1}^{2l+1}\left(\frac{2r}{na}\right)Y_l^m(\theta,\phi)$$
 
 ### Quantum-number constraints
 
-> n = 1, 2, 3, ...
->
-> l = 0, 1, 2, ..., n - 1
->
-> m = -l, ..., 0, ..., l
+$$n = 1, 2, 3, \ldots$$
+
+$$l = 0, 1, 2, \ldots, n - 1$$
+
+$$m = -l, \ldots, 0, \ldots, l$$
 
 ### Constants used in these equations
 
 | Symbol | Meaning |
 |---|---|
-| Eₙ | Energy per level |
-| m in the energy formula | Equivalent mass at the center of gravity between electron and nucleus |
-| ℏ | Reduced Planck's constant |
-| e | Electric charge |
-| ϵ₀ | Permittivity of free space |
-| n | Principal quantum number |
-| l | Azimuthal quantum number |
-| m | Magnetic quantum number |
-| a | Bohr radius |
-
-## Contents
-
-* `docs/` - final report PDF
-* `matlab/` - MATLAB scripts for spherical harmonics and hydrogen energy levels
-* `public/images/` - project images used in the README and portfolio page
-
-## MATLAB Scripts
-
-| File | Purpose |
-|---|---|
-| `matlab/sphericalHarmonics.m` | Plots a spherical harmonic surface for selected `L` and `M` values. |
-| `matlab/plot_spherical_harmonics_grid.m` | Calls `sphericalHarmonics.m` for selected low-order harmonics and arranges them in a grid. |
-| `matlab/plot_energy_levels.m` | Plots the first hydrogen energy levels using `E_n = -13.6 / n^2` eV. |
-
-**The Cauchy-Schwarz Inequality**\
-$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+| $E_n$ | Energy per level |
+| $m$ in the energy formula | Equivalent mass at the center of gravity between electron and nucleus |
+| $\hbar$ | Reduced Planck's constant |
+| $e$ | Electric charge |
+| $\varepsilon_0$ | Permittivity of free space |
+| $n$ | Principal quantum number |
+| $l$ | Azimuthal quantum number |
+| $m$ | Magnetic quantum number |
+| $a$ | Bohr radius |
 
 ## Main Features
 
