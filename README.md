@@ -151,6 +151,4 @@ plot_energy_levels.m
 
 The final report is available at:
 
-```text
 [Schrodinger Equation for Hydrogen Atom Report](https://drive.google.com/file/d/1A0GI4gs1n4FiytFHT8X_bnLk8NrdisXF/view?usp=sharing)
-```
