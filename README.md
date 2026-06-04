@@ -1,6 +1,6 @@
 # Schrödinger Equation for the Hydrogen Atom
 
-This project documents a Partial Differential Equations and Complex Analysis study of the Schrödinger equation for the hydrogen atom. It focuses on deriving the time-independent hydrogen-atom solution using separation of variables in spherical coordinates, then visualizing selected spherical harmonics and hydrogen energy levels using MATLAB.
+This project documents a Partial Differential Equations and Complex Analysis study of the Schrödinger equation for the hydrogen atom. It focuses on deriving the time-independent hydrogen-atom solution using separation of variables in spherical coordinates, then visualizing selected spherical harmonics, hydrogen wave-function outputs, orbital surfaces, and hydrogen energy levels using MATLAB-supported plots.
 
 ## Preview
 
@@ -10,82 +10,132 @@ The spherical harmonics grid shows selected normalized angular wave-function sha
 
 ![Hydrogen energy levels](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-energy-levels.png)
 
-The energy-level plot visualizes the hydrogen spectrum using the relation `E_n = -13.6 / n^2` eV.
+The energy-level plot visualizes the hydrogen spectrum using the inverse-square relationship between the energy level and the principal quantum number.
 
-## Density Plot Outputs
+## Probability-Density Outputs
 
-The report includes density-plot outputs for selected hydrogen states. Instead of using the full report table as one image, the individual simulation outputs are kept as separate images and arranged below in Markdown.
+The probability-density outputs are kept as individual images instead of using the full report table as a screenshot.
 
-| State `(n, l, m)` | 2D probability-density view | 3D probability-density view |
-|---|---|---|
-| `(2, 0, 0)` | ![2D density for 2-0-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-2-0-0-2d.png) | ![3D density for 2-0-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-2-0-0-3d.png) |
-| `(3, 1, 0)` | ![2D density for 3-1-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-3-1-0-2d.png) | ![3D density for 3-1-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-3-1-0-3d.png) |
-| `(4, 3, 0)` | ![2D density for 4-3-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-4-3-0-2d.png) | ![3D density for 4-3-0](public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-4-3-0-3d.png) |
+<table>
+  <thead>
+    <tr>
+      <th>State <code>(n, l, m)</code></th>
+      <th>2D probability-density view</th>
+      <th>3D probability-density view</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>(2, 0, 0)</code></td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-2-0-0-2d.png" alt="2D probability-density plot for n equals 2, l equals 0, m equals 0" width="360">
+      </td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-2-0-0-3d.png" alt="3D probability-density plot for n equals 2, l equals 0, m equals 0" width="360">
+      </td>
+    </tr>
+    <tr>
+      <td><code>(3, 1, 0)</code></td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-3-1-0-2d.png" alt="2D probability-density plot for n equals 3, l equals 1, m equals 0" width="360">
+      </td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-3-1-0-3d.png" alt="3D probability-density plot for n equals 3, l equals 1, m equals 0" width="360">
+      </td>
+    </tr>
+    <tr>
+      <td><code>(4, 3, 0)</code></td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-4-3-0-2d.png" alt="2D probability-density plot for n equals 4, l equals 3, m equals 0" width="360">
+      </td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-density-4-3-0-3d.png" alt="3D probability-density plot for n equals 4, l equals 3, m equals 0" width="360">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Orbital Surface Outputs
 
 The simulated surfaces of `|psi|^2` are kept as individual images instead of using the full report table as a screenshot.
 
-| State `(n, l, m)` | Simulated surface of `|psi|^2` |
-|---|---|
-| `(2, 0, 0)` | <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-2-0-0.png" alt="Hydrogen orbital surface for n equals 2, l equals 0, m equals 0" width="420"> |
-| `(3, 1, 0)` | <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-3-1-0.png" alt="Hydrogen orbital surface for n equals 3, l equals 1, m equals 0" width="420"> |
-| `(4, 3, 0)` | <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-4-3-0.png" alt="Hydrogen orbital surface for n equals 4, l equals 3, m equals 0" width="420"> |
-
-## Key Results
-
-> **Hydrogen energy levels**
->
-> `E_n = -13.6 / n^2 eV`
->
-> **Hydrogen wave-function form**
->
-> `psi_nlm(r, theta, phi) = R_nl(r) Y_l^m(theta, phi)`
->
-> **Quantum-number constraints**
->
-> `n = 1, 2, 3, ...`
->
-> `l = 0, 1, ..., n - 1`
->
-> `m = -l, ..., 0, ..., l`
-
+<table>
+  <thead>
+    <tr>
+      <th>State <code>(n, l, m)</code></th>
+      <th>Simulated surface of <code>|psi|^2</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>(2, 0, 0)</code></td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-2-0-0.png" alt="Hydrogen orbital surface for n equals 2, l equals 0, m equals 0" width="430">
+      </td>
+    </tr>
+    <tr>
+      <td><code>(3, 1, 0)</code></td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-3-1-0.png" alt="Hydrogen orbital surface for n equals 3, l equals 1, m equals 0" width="430">
+      </td>
+    </tr>
+    <tr>
+      <td><code>(4, 3, 0)</code></td>
+      <td>
+        <img src="public/images/projects/schrodinger-hydrogen-atom-pde/hydrogen-orbital-surface-4-3-0.png" alt="Hydrogen orbital surface for n equals 4, l equals 3, m equals 0" width="430">
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Results
 
-The hydrogen energy levels are summarized by:
+The final results give the hydrogen energy levels, the general hydrogen wave-function form, and the quantum-number constraints.
+
+### Hydrogen energy levels
 
 ```text
-E_n = E_1 / n^2
-E_1 = -13.6 eV
-Therefore: E_n = -13.6 / n^2 eV
+E_n = - [ m / (2ℏ^2) * ( e^2 / (4πϵ0) )^2 ] * 1/n^2
+    = E_1 / n^2
 ```
 
-The hydrogen wave function is written as a product of radial and angular parts:
+### Hydrogen wave-function form
 
 ```text
-psi_nlm(r, theta, phi) = R_nl(r) Y_l^m(theta, phi)
+ψ_nlm(r, θ, φ)
+= sqrt[
+    (2 / na)^3
+    * (n - l - 1)! / (2n[(n + l)!]^3)
+  ]
+  * e^(-r/na)
+  * (2r / na)^l
+  * L_(n-l-1)^(2l+1)(2r / na)
+  * Y_l^m(θ, φ)
 ```
 
-The normalized form reported in the project is:
-
-```text
-psi_nlm(r, theta, phi)
-= sqrt((2 / (n a))^3 * (n - l - 1)! / (2n[(n + l)!]^3))
-  * exp(-r / (n a))
-  * (2r / (n a))^l
-  * L_(n-l-1)^(2l+1)(2r / (n a))
-  * Y_l^m(theta, phi)
-```
-
-The quantum-number constraints are:
+### Quantum-number constraints
 
 ```text
 n = 1, 2, 3, ...
+
 l = 0, 1, 2, ..., n - 1
+
 m = -l, ..., 0, ..., l
 ```
 
+### Constants used in these equations
+
+| Symbol | Meaning |
+|---|---|
+| `E_n` | Energy per level |
+| `m` in the energy formula | Equivalent mass at the center of gravity between electron and nucleus |
+| `ℏ` | Reduced Planck's constant |
+| `e` | Electric charge |
+| `ϵ0` | Permittivity of free space |
+| `n` | Principal quantum number |
+| `l` | Azimuthal quantum number |
+| `m` | Magnetic quantum number |
+| `a` | Bohr radius |
 
 ## Contents
 
@@ -100,6 +150,17 @@ m = -l, ..., 0, ..., l
 | `matlab/sphericalHarmonics.m` | Plots a spherical harmonic surface for selected `L` and `M` values. |
 | `matlab/plot_spherical_harmonics_grid.m` | Calls `sphericalHarmonics.m` for selected low-order harmonics and arranges them in a grid. |
 | `matlab/plot_energy_levels.m` | Plots the first hydrogen energy levels using `E_n = -13.6 / n^2` eV. |
+
+## Main Features
+
+* Derivation of the time-independent Schrödinger equation for the hydrogen atom
+* Separation of variables in spherical coordinates
+* Angular solution using associated Legendre functions and spherical harmonics
+* Radial solution leading to quantized hydrogen energy levels
+* MATLAB visualization of selected spherical harmonics
+* MATLAB visualization of hydrogen energy levels
+* Individual probability-density and orbital-surface output images
+* Final academic report documenting the derivation, results, and references
 
 ## Technical Overview
 
