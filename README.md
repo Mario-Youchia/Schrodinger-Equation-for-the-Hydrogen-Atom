@@ -127,34 +127,30 @@ $$m = -l, \ldots, 0, \ldots, l$$
 
 ## Technical Overview
 
-The report starts from the Schrödinger equation and applies the Hamiltonian operator to obtain the time-dependent form. The time-independent equation is then separated in spherical coordinates into radial and angular components.
+The project starts with Schrödinger equation and uses Hamiltonian operator to get the time-dependent form. Then the time independent equation is separated in spherical coordinates into a radial and an angular part.
 
-The angular solution leads to spherical harmonics, which describe the angular part of the hydrogen wave functions. The radial solution leads to the hydrogen energy relation, where the energy levels follow an inverse-square dependence on the principal quantum number.
+The angular solution gives the spherical harmonics, which represent the angular part of the hydrogen wave functions. The radial solution provides the hydrogen energy relation, where the energy levels are proportional to the inverse square of the principal quantum number.
 
-The MATLAB scripts support the final visualization stage of the project by plotting selected spherical harmonics and the hydrogen energy spectrum.
+The MATLAB scripts are used to aid in the final visualization step of the project by plotting some spherical harmonics and the hydrogen energy spectrum.
 
 ## How to Run / Review
 
-Open MATLAB from the project root or from the `matlab/` folder.
+Open MATLAB from the project root.
 
 To generate the spherical harmonics grid, run:
 
 ```matlab
-matlab/plot_spherical_harmonics_grid.m
+plot_spherical_harmonics_grid.m
 ```
 
 To generate the energy-level plot, run:
 
 ```matlab
-matlab/plot_energy_levels.m
+plot_energy_levels.m
 ```
 
 The final report is available at:
 
 ```text
-docs/schrodinger-hydrogen-atom-report.pdf
+[Schrodinger Equation for Hydrogen Atom Report](https://drive.google.com/file/d/1A0GI4gs1n4FiytFHT8X_bnLk8NrdisXF/view?usp=sharing)
 ```
-
-## Limitations
-
-This is a basic academic PDE/quantum-mechanics project focused on mathematical derivation and MATLAB visualization. It is not intended to be a full quantum-simulation software package.
